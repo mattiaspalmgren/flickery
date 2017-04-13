@@ -12,6 +12,10 @@ html {
   padding: 0;
 }
 
+h1 {
+  font-family: $heading-family;
+}
+
 h1, h2, h3, h4, p {
   font-weight: lighter;
 }
@@ -28,4 +32,8 @@ i {
   width: 100%;
   max-width: $max-width;
   margin: 0 auto;
+}
+
+#header {
+  margin: 5vh 0;
 }
