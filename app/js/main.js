@@ -1,11 +1,19 @@
-import renderImages from './components/render';
+import renderImages from './modules/render';
+import jsonp from './modules/jsonp';
 import index from '../css/index.scss';
 
 document.addEventListener('DOMContentLoaded', function() {
   console.log('Taking off... 🚀');
 
-  const gallery = document.getElementById('gallery');
-  const images = [0,1,2,3,4,5,6,7,8,9,10,12];
-  renderImages(gallery, images);
+  const url = 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&=jsonpCallback&tags=cat';
+  jsonp(url, renderFeed);
+
 
 });
+
+const renderFeed = (res) => {
+  const images = res.items;
+  const gallery = document.getElementById('gallery');
+  renderImages(gallery, images);
+  console.log(res);
+}
