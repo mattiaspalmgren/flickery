@@ -15,7 +15,7 @@
   background-repeat: no-repeat; 
   background-position: center;
   border: $image-item-border-width solid $image-item-border-color;
-  border-radius: $image-item-border-radius;
+  border-radius: $border-radius;
   height: $image-item-height;
   width: $image-item-width;
   @include transition(opacity 150ms);

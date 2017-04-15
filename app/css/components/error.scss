@@ -1,0 +1,18 @@
+.error {
+  width: $error-width;
+  padding: 2vh 2vh 4vh 2vh;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid $error-red;
+  border-radius: $border-radius;
+
+  &__icon {
+    font-family: fontAwesome;
+    color: $error-red;
+    font-size: 1.5em;
+    line-height: 1.8;
+    &:before {
+      content: '\f057';
+    }
+  }
+}

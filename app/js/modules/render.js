@@ -27,8 +27,9 @@ window.imgLoaded = imgLoaded;
 
 const renderError = (elem) => {
   elem.innerHTML = `
-      <div class="col col-4">
-        Sorry, the flickr source to be unvailable at the moment!
+      <div class="error">
+        <i class="error__icon"></i>
+        <p>Sorry, the flickr source seem to be unvailable at the moment!</p>
       </div>
     `;
 }
