@@ -1,7 +1,16 @@
 $gutter: 10px;
 
 /* Components */
-$image-item-height: 20vh;
+$image-item-height: 25vh;
+$image-item-width: 100%;
+$image-item-border-width: 1px;
+$image-item-border-radius: 3px;
+$image-item-border-color: Gainsboro;
+
+$spinner-widht: 1em;
+$spinner-height: $spinner-widht; 
+$spinner-margin-top: #{(0.5*$image-item-height)};
+$spinner-margin-left: 15vh;
 
 /* Layout */
 $max-width: 1024px;

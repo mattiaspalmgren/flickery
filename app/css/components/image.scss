@@ -1,0 +1,22 @@
+.image__wrapper {
+  overflow: hidden;
+  .image__item {
+    opacity: 0;
+  }
+
+  &--loaded {
+    .image__item {
+      opacity: 1;
+    }    
+  }
+}
+
+.image__item {
+  background-repeat: no-repeat; 
+  background-position: center;
+  border: $image-item-border-width solid $image-item-border-color;
+  border-radius: $image-item-border-radius;
+  height: $image-item-height;
+  width: $image-item-width;
+  @include transition(opacity 150ms);
+}

@@ -1,17 +1,7 @@
-// const jsonp = (url, callback) => {
-//   const script = document.createElement('script');
-//   script.type = 'text/javascript';
-//   script.src = url;
-//   
-//   window.jsonFlickrFeed = callback;
-// };
-
-// export default jsonp;
-
+import { Promise } from 'es6-promise';
 const TIMEOUT = 3000;
 const jsonp = (url) => {
   return new Promise((resolve, reject) => {
-
     const callbackName = 'jsonFlickrFeed';
     const timeoutTrigger = window.setTimeout(() => {
       reject(new Error('Timeout'));
