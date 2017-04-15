@@ -4,14 +4,17 @@ class App {
   constructor(elem) {
     const galleryElem = document.getElementById('gallery');
     const search = document.getElementById('search');
+    const submit = document.getElementById('submit');
     this.handleSearch = this.handleSearch.bind(this);
     this.searchImage = this.searchImage.bind(this);
     search.onsearch = this.handleSearch;
+    submit.onclick = this.handleSearch;
     this.gallery = new Gallery(galleryElem);
     this.search = search;
   };
 
   handleSearch () {
+    console.log('searcch');
     const { gallery, search: { value} } = this;
     if (value) {
       this.searchImage(search.value);

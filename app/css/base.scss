@@ -24,16 +24,27 @@ i {
   font-style: normal; 
 }
 
-input[type=search] {
-  width: $search-width;
+input {
+  border-radius: $border-radius;
   padding: $search-padding;
   border: $search-border-width solid $search-border-color;
-  border-radius: $border-radius;
 
   &:focus {
     outline: none
   }
 }
+
+input[type=search] {
+  width: $search-width;
+}
+
+input[type=submit] {
+  background-color: $grey;
+  color: white;
+  cursor: pointer;
+  border:none;
+}
+
 
 #wrapper {
   width: 100%;

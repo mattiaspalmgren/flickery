@@ -1,8 +1,15 @@
+/* Fonts */
+$heading-family: 'Noto Serif', serif;
+
+/* Colors */
+$grey: Gainsboro;
+$error-red: IndianRed;
+
 /* Image */
 $image-wrapper-height: 25vh;
 $image-item-width: 100%;
 $image-item-border-width: 1px;
-$image-item-border-color: Gainsboro;
+$image-item-border-color: $grey;
 
 /* Spinner */
 $spinner-widht: 1em;
@@ -19,7 +26,7 @@ $error-width: 30vh;
 
 /* Search */
 $search-border-width: 1px;
-$search-border-color: Gainsboro;
+$search-border-color: $grey;
 $search-padding: 12px 20px;
 $search-width: 70%;
 
@@ -30,7 +37,4 @@ $media-medium: 800px;
 $border-radius: 3px;
 $gutter: 10px;
 
-/* Fonts */
-$heading-family: 'Noto Serif', serif;
-$error-red: IndianRed;
 
