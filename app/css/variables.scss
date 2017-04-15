@@ -1,26 +1,34 @@
-$gutter: 10px;
-
-/* Components */
+/* Image */
 $image-wrapper-height: 25vh;
 $image-item-width: 100%;
 $image-item-border-width: 1px;
 $image-item-border-color: Gainsboro;
 
+/* Spinner */
 $spinner-widht: 1em;
 $spinner-height: $spinner-widht; 
 $spinner-margin-top: #{(0.5*$image-wrapper-height)};
 $spinner-margin-left: 15vh;
+$spinner-border-width: 2px;
 
+/* Error */
+$error-border-width: 2px;
+$error-icon-size: 1.5em;
+$error-padding: 2vh 2vh 4vh 2vh;
 $error-width: 30vh;
 
-$search-width: 70%;
+/* Search */
+$search-border-width: 1px;
 $search-border-color: Gainsboro;
+$search-padding: 12px 20px;
+$search-width: 70%;
 
 /* Layout */
 $max-width: 1024px;
 $media-small: 550px;
 $media-medium: 800px;
 $border-radius: 3px;
+$gutter: 10px;
 
 /* Fonts */
 $heading-family: 'Noto Serif', serif;

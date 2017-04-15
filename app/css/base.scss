@@ -16,10 +16,6 @@ h1 {
   margin-bottom: 5vh;
 }
 
-h1, h2, h3, h4, p {
-  font-weight: lighter;
-}
-
 p {
   font-weight: lighter; 
 }
@@ -30,8 +26,8 @@ i {
 
 input[type=search] {
   width: $search-width;
-  padding: 12px 20px;
-  border: 1px solid $search-border-color;
+  padding: $search-padding;
+  border: $search-border-width solid $search-border-color;
   border-radius: $border-radius;
 
   &:focus {

@@ -5,8 +5,8 @@
 .spinner {
   position: absolute;
   margin-top: $spinner-margin-top;
-  margin-left: 15vh;
-  border: 2px solid black;
+  margin-left: $spinner-margin-left;
+  border: $spinner-border-width solid black;
   border-right-color: transparent;
   border-radius: 50%;
   
