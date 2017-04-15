@@ -20,6 +20,11 @@ class Gallery {
     const { elem } = this; 
     elem.innerHTML = error();
   }
+
+  clear () {
+    const { elem } = this; 
+    elem.innerHTML = ''; 
+  }
 }
 
 export default Gallery;
