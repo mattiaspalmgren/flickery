@@ -1,5 +1,6 @@
 .image__wrapper {
   overflow: hidden;
+  height: $image-wrapper-height;
   .image__item {
     opacity: 0;
   }
@@ -16,7 +17,6 @@
   background-position: center;
   border: $image-item-border-width solid $image-item-border-color;
   border-radius: $border-radius;
-  height: $image-item-height;
   width: $image-item-width;
   @include transition(opacity 150ms);
 }

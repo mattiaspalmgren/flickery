@@ -1,17 +1,20 @@
 $gutter: 10px;
 
 /* Components */
-$image-item-height: 25vh;
+$image-wrapper-height: 25vh;
 $image-item-width: 100%;
 $image-item-border-width: 1px;
 $image-item-border-color: Gainsboro;
 
 $spinner-widht: 1em;
 $spinner-height: $spinner-widht; 
-$spinner-margin-top: #{(0.5*$image-item-height)};
+$spinner-margin-top: #{(0.5*$image-wrapper-height)};
 $spinner-margin-left: 15vh;
 
 $error-width: 30vh;
+
+$search-width: 70%;
+$search-border-color: Gainsboro;
 
 /* Layout */
 $max-width: 1024px;
@@ -22,3 +25,4 @@ $border-radius: 3px;
 /* Fonts */
 $heading-family: 'Noto Serif', serif;
 $error-red: IndianRed;
+

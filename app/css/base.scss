@@ -13,6 +13,7 @@ html {
 
 h1 {
   font-family: $heading-family;
+  margin-bottom: 5vh;
 }
 
 h1, h2, h3, h4, p {
@@ -25,6 +26,17 @@ p {
 
 i {
   font-style: normal; 
+}
+
+input[type=search] {
+  width: $search-width;
+  padding: 12px 20px;
+  border: 1px solid $search-border-color;
+  border-radius: $border-radius;
+
+  &:focus {
+    outline: none
+  }
 }
 
 #wrapper {
