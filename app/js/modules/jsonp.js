@@ -1,5 +1,5 @@
 import { Promise } from 'es6-promise';
-const TIMEOUT = 3000;
+const TIMEOUT = 2000;
 const jsonp = (url) => {
   return new Promise((resolve, reject) => {
     const callbackName = 'jsonFlickrFeed';
