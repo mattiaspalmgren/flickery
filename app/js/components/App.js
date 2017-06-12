@@ -14,7 +14,6 @@ class App {
   };
 
   handleSearch () {
-    console.log('searcch');
     const { gallery, search: { value} } = this;
     if (value) {
       this.searchImage(search.value);
